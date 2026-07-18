@@ -195,7 +195,7 @@ local function CreateUI()
     Title.Size = UDim2.new(1,0,0,40)
     Title.BackgroundTransparency = 1
     Title.Font = Enum.Font.GothamBold
-    Title.Text = "Xico Stats Checker"
+    Title.Text = "VNTK Stats Checker"
     Title.TextColor3 = Color3.fromRGB(232,188,99)
     Title.TextTransparency = 0.15
     Title.TextSize = 28
@@ -566,7 +566,7 @@ pcall(updateTime)
 refreshDisplay()
 
 -- ===================== PHẦN CỐT LÕI (VNTK) =====================
-function VNTKLOGIC()
+function XICOLOGIC()
     local W = {Instances = {}}
     local function SetText(J, C)
         -- Không cần dùng
@@ -586,7 +586,7 @@ function VNTKLOGIC()
     getgenv().alert = function(a, h)
         pcall(function() J:Notify({Title = a or '', Content = h or '', Duration = 5}) end)
     end
-    print("XICO NOTIFICATION", "Endpoint reached")
+    print("VNTK NOTIFICATION", "Endpoint reached")
     OldSessionTime = isfile('.tdif-' .. game.Players.LocalPlayer.Name) and tonumber(readfile(".tdif-" .. game.Players.LocalPlayer.Name)) or 0
     repeat
         task.wait()
