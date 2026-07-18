@@ -566,7 +566,7 @@ pcall(updateTime)
 refreshDisplay()
 
 -- ===================== PHẦN CỐT LÕI (VNTK) =====================
-function XICOLOGIC()
+function VNTKLOGIC()
     local W = {Instances = {}}
     local function SetText(J, C)
         -- Không cần dùng
@@ -3076,4 +3076,4 @@ function XICOLOGIC()
 end
 
 -- Chạy script
-XICOLOGIC()
+VNTKLOGIC()
